@@ -1,0 +1,1 @@
+include ':app', ':dagger-compiler-1.2.2'
