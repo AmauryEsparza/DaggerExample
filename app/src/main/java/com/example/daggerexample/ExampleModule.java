@@ -24,4 +24,5 @@ public class ExampleModule {
     public Bar provideBar(){
         return new Bar();
     }
+
 }
