@@ -14,21 +14,16 @@ import dagger.ObjectGraph;
 public class ExampleApp extends Application {
     private ObjectGraph objectGraph;
 
-    public ExampleApp(){
-
-    }
     @Override
     public void onCreate() {
         super.onCreate();
         Log.d("ExampleApp", "onCreate");
-        //objectGraph = ObjectGraph.create(ExampleModule.class);
         objectGraph = ObjectGraph.create(getModules().toArray());
     }
 
     protected List<Object> getModules(){
         List<Object> lista = Arrays.<Object>asList(new ExampleModule());
         return lista;
-
     }
 
     public ObjectGraph getObjectGraph(){

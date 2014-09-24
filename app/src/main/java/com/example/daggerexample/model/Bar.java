@@ -1,4 +1,4 @@
-package com.example.daggerexample;
+package com.example.daggerexample.model;
 
 import android.util.Log;
 
@@ -8,5 +8,9 @@ import android.util.Log;
 public class Bar {
     public void printValues(){
         Log.d("Bar Class", "Called");
+    }
+
+    public String getText(){
+        return "Bar Injected";
     }
 }

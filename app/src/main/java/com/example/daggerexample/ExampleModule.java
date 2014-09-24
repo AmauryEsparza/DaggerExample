@@ -1,5 +1,9 @@
 package com.example.daggerexample;
 
+import com.example.daggerexample.model.Bar;
+import com.example.daggerexample.model.Foo;
+import com.example.daggerexample.ui.ExampleActivity;
+
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -15,6 +19,7 @@ import dagger.Provides;
 )
 public class ExampleModule {
 
+    //The dependencies that are going to be injected
     @Provides @Singleton
     public Foo provideFoo(){
         return new Foo();
